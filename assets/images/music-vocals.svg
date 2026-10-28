@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <radialGradient id="micGlow" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#1e1022"/>
+      <stop offset="50%" stop-color="#0d0510"/>
+      <stop offset="100%" stop-color="#040406"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#micGlow)"/>
+  
+  <!-- Studio Condenser Microphone Silhouette with Shockmount -->
+  <g transform="translate(300, 150)">
+    <!-- Shockmount outer ring -->
+    <circle cx="0" cy="0" r="65" fill="none" stroke="#e50914" stroke-width="2" stroke-opacity="0.8"/>
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#444" stroke-width="1.5"/>
+    <!-- Mic capsule & mesh -->
+    <rect x="-24" y="-70" width="48" height="110" rx="20" fill="#14141b" stroke="#666" stroke-width="1.5"/>
+    <line x1="-24" y1="-25" x2="24" y2="-25" stroke="#e50914" stroke-width="2"/>
+    <!-- Mic Stand -->
+    <rect x="-8" y="65" width="16" height="170" fill="#1f2029" stroke="#333" stroke-width="1"/>
+  </g>
+  
+  <!-- Sound Waves expanding -->
+  <circle cx="300" cy="130" r="95" fill="none" stroke="#e50914" stroke-width="1" stroke-dasharray="4,6" opacity="0.4"/>
+  <circle cx="300" cy="130" r="130" fill="none" stroke="#e50914" stroke-width="0.8" stroke-dasharray="2,8" opacity="0.25"/>
+  
+  <!-- "REC" indicator lamp -->
+  <circle cx="530" cy="50" r="8" fill="#e50914"/>
+  <text x="545" y="55" font-family="monospace" font-size="12" font-weight="bold" fill="#e50914">REC</text>
+  
+  <text x="40" y="335" font-family="Impact, sans-serif" font-size="24" fill="#ffffff" letter-spacing="2">RAW VOCALS &amp; ACOUSTIC</text>
+  <text x="40" y="358" font-family="monospace" font-size="11" fill="#a855f7">SIMULTANEOUS GUITAR &amp; VOCAL PERFORMANCE</text>
+</svg>

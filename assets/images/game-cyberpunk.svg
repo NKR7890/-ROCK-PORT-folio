@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b001a"/>
+      <stop offset="50%" stop-color="#050814"/>
+      <stop offset="100%" stop-color="#140a02"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#cpGrad)"/>
+  
+  <!-- Cyberpunk Megabuildings & Holograms -->
+  <rect x="40" y="80" width="80" height="250" fill="#0a0e17" stroke="#00f0ff" stroke-width="0.5"/>
+  <rect x="140" y="40" width="110" height="290" fill="#0d1322" stroke="#fcee0a" stroke-width="0.5"/>
+  <rect x="270" y="110" width="90" height="220" fill="#0a0e17"/>
+  <rect x="380" y="60" width="120" height="270" fill="#0f172a" stroke="#ff003c" stroke-width="0.5"/>
+  
+  <!-- Neon Cyberpunk Signage in Kanji / Glitch -->
+  <text x="155" y="90" font-family="monospace" font-size="16" fill="#fcee0a" font-weight="bold">ARASAKA</text>
+  <rect x="155" y="100" width="75" height="2" fill="#fcee0a"/>
+  <text x="395" y="100" font-family="monospace" font-size="14" fill="#00f0ff">KANG TAO // 康涛</text>
+  <text x="395" y="130" font-family="monospace" font-size="12" fill="#ff003c">TRAUMA TEAM</text>
+  
+  <!-- Cyberware Head Wireframe Vector -->
+  <circle cx="510" cy="230" r="45" fill="none" stroke="#00f0ff" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <path d="M475 230 H545 M510 195 V265" stroke="#ff003c" stroke-width="1"/>
+  <line x1="510" y1="230" x2="540" y2="200" stroke="#fcee0a" stroke-width="2"/>
+  <circle cx="540" cy="200" r="4" fill="#fcee0a"/>
+  
+  <!-- Cyberpunk Yellow Ribbon -->
+  <polygon points="40,310 320,310 340,345 40,345" fill="#fcee0a"/>
+  <text x="50" y="337" font-family="'Impact', sans-serif" font-size="28" fill="#000000" letter-spacing="2">CYBERPUNK 2077</text>
+  <text x="350" y="333" font-family="monospace" font-size="11" fill="#00f0ff">NIGHT CITY // WAKE THE FUCK UP, SAMURAI</text>
+</svg>

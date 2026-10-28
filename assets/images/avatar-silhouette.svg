@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <radialGradient id="rimGlow" cx="50%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#e50914" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#120508" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#070709" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="cyberRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff2a4b"/>
+      <stop offset="100%" stop-color="#55000d"/>
+    </linearGradient>
+    <filter id="noiseFilter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" result="noise"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.15 0"/>
+      <feComposite in2="SourceGraphic" in="glitch" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="600" height="700" fill="#09090c"/>
+  <circle cx="300" cy="300" r="280" fill="url(#rimGlow)"/>
+  
+  <!-- Atmospheric grid lines -->
+  <path d="M50 0 V700 M150 0 V700 M250 0 V700 M350 0 V700 M450 0 V700 M550 0 V700" stroke="#ff2a4b" stroke-width="0.5" stroke-opacity="0.1"/>
+  <path d="M0 100 H600 M0 200 H600 M0 300 H600 M0 400 H600 M0 500 H600 M0 600 H600" stroke="#ff2a4b" stroke-width="0.5" stroke-opacity="0.1"/>
+  
+  <!-- Guitar Neck Silhouette -->
+  <path d="M420 120 L450 140 L280 500 L250 480 Z" fill="#141419" stroke="#ff2a4b" stroke-width="1.5" stroke-opacity="0.7"/>
+  <circle cx="435" cy="130" r="4" fill="#00f0ff"/>
+  <line x1="435" y1="130" x2="265" y2="490" stroke="#ffffff" stroke-width="0.8" stroke-opacity="0.6"/>
+  <line x1="440" y1="134" x2="270" y2="494" stroke="#ffffff" stroke-width="0.8" stroke-opacity="0.5"/>
+  
+  <!-- Silhouette of Musician / Creative -->
+  <path d="M300 160 C250 160 230 190 225 240 C220 280 235 320 250 340 C210 360 170 410 160 480 C150 550 140 650 135 700 H465 C460 650 450 550 440 480 C430 410 390 360 350 340 C365 320 380 280 375 240 C370 190 350 160 300 160 Z" fill="#0c0d12" stroke="#ff2a4b" stroke-width="1" stroke-opacity="0.4"/>
+  
+  <!-- Rim Lighting (Red Crimson and Cyan) -->
+  <path d="M225 240 C220 280 235 320 250 340 C210 360 170 410 160 480" fill="none" stroke="#e50914" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <path d="M375 240 C370 280 360 310 350 340 C390 360 430 410 440 480" fill="none" stroke="#00f0ff" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  
+  <!-- Tech Stencil Markings -->
+  <text x="30" y="50" font-family="monospace" font-size="12" fill="#e50914" letter-spacing="3">OPERATOR // NAKSHATRA</text>
+  <text x="30" y="70" font-family="monospace" font-size="10" fill="#666" letter-spacing="2">CLASS: MULTIDISCIPLINARY CREATIVE</text>
+  <text x="440" y="50" font-family="monospace" font-size="11" fill="#00f0ff" letter-spacing="2">SYS.ID // 084</text>
+  <text x="30" y="660" font-family="monospace" font-size="10" fill="#555" letter-spacing="3">AUDIO / ART / SPEED / CODE</text>
+  
+  <!-- HUD crosshairs -->
+  <circle cx="300" cy="240" r="8" fill="none" stroke="#e50914" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="285" y1="240" x2="315" y2="240" stroke="#e50914" stroke-width="1"/>
+  <line x1="300" y1="225" x2="300" y2="255" stroke="#e50914" stroke-width="1"/>
+  
+  <!-- Subtle blood slash decal -->
+  <path d="M80 620 L180 590 L120 635 L240 605" stroke="#e50914" stroke-width="2" fill="none" opacity="0.5"/>
+</svg>

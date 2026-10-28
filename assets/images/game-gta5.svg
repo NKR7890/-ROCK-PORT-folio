@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gta5Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#180b22"/>
+      <stop offset="45%" stop-color="#3b1d38"/>
+      <stop offset="75%" stop-color="#831843"/>
+      <stop offset="100%" stop-color="#0a0a0e"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#gta5Grad)"/>
+  
+  <!-- Los Santos Downtown skyline at sunset -->
+  <polygon points="120,260 160,110 200,260" fill="#14071b"/>
+  <rect x="220" y="80" width="60" height="180" fill="#1e0b29"/>
+  <!-- Maze Bank Tower -->
+  <path d="M300 260 L300 50 C315 50 345 50 360 50 L360 260 Z" fill="#2d103c" stroke="#f43f5e" stroke-width="0.5"/>
+  <rect x="380" y="130" width="50" height="130" fill="#14071b"/>
+  <rect x="450" y="90" width="55" height="170" fill="#1e0b29"/>
+  
+  <!-- Police Helicopter searchlight cone -->
+  <polygon points="140,50 40,280 260,280" fill="#ffffff" opacity="0.08"/>
+  <circle cx="140" cy="50" r="5" fill="#f43f5e"/>
+  
+  <!-- Roman numeral V with green leaf banner -->
+  <text x="40" y="65" font-family="'Pricedown', Impact, sans-serif" font-size="34" fill="#ffffff">GRAND THEFT AUTO</text>
+  <text x="390" y="70" font-family="Times New Roman, serif" font-weight="900" font-size="44" fill="#22c55e">V</text>
+  
+  <text x="40" y="335" font-family="monospace" font-size="12" font-weight="bold" fill="#f43f5e">LOS SANTOS // SAN ANDREAS</text>
+  <text x="40" y="356" font-family="monospace" font-size="11" fill="#aaa">OPEN-WORLD FREEDOM • CINEMATIC HEIST CHAOS • MULTI-CHARACTER</text>
+</svg>

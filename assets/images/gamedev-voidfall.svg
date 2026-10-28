@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <radialGradient id="voidLight" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#450a0a" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#140303" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#020101" stop-opacity="1"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#voidLight)"/>
+  
+  <!-- Corridors perspective -->
+  <polygon points="0,0 200,120 200,260 0,380" fill="#0d0404" stroke="#7f1d1d" stroke-width="1"/>
+  <polygon points="600,0 400,120 400,260 600,380" fill="#0d0404" stroke="#7f1d1d" stroke-width="1"/>
+  <rect x="200" y="120" width="200" height="140" fill="#050101" stroke="#dc2626" stroke-width="1.5"/>
+  
+  <!-- Creepy silhouette at doorway -->
+  <path d="M290 180 C280 150 320 150 310 180 C325 210 320 240 320 260 H280 C280 240 275 210 290 180 Z" fill="#000" stroke="#ff2a4b" stroke-width="1"/>
+  <circle cx="295" cy="165" r="2" fill="#ff0000"/>
+  <circle cx="305" cy="165" r="2" fill="#ff0000"/>
+  
+  <!-- Unreal Engine 5 In-game HUD Mockup -->
+  <rect x="30" y="325" width="120" height="8" fill="#333"/>
+  <rect x="30" y="325" width="75" height="8" fill="#e50914"/>
+  <text x="30" y="318" font-family="monospace" font-size="9" fill="#e50914">HEALTH // 62%</text>
+  
+  <rect x="30" y="348" width="120" height="6" fill="#333"/>
+  <rect x="30" y="348" width="105" height="6" fill="#00f0ff"/>
+  <text x="30" y="344" font-family="monospace" font-size="8" fill="#00f0ff">STAMINA // 88%</text>
+  
+  <text x="440" y="345" font-family="monospace" font-size="10" fill="#ef4444">AMMO: 04 / 12</text>
+  <text x="440" y="360" font-family="monospace" font-size="9" fill="#666">FLASHLIGHT BATTERY: 34%</text>
+  
+  <rect x="40" y="30" width="170" height="26" fill="#150505" stroke="#ef4444" stroke-width="1"/>
+  <text x="48" y="47" font-family="monospace" font-size="10" font-weight="bold" fill="#ef4444">UE5 // VOLUMETRIC FOG</text>
+</svg>

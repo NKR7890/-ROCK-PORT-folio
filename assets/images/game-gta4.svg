@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gta4Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141416"/>
+      <stop offset="50%" stop-color="#1c1b18"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#gta4Grad)"/>
+  
+  <!-- Heavy rain streaks -->
+  <g stroke="#ffffff" stroke-width="0.75" opacity="0.12">
+    <line x1="30" y1="0" x2="10" y2="380"/> <line x1="90" y1="0" x2="70" y2="380"/>
+    <line x1="160" y1="0" x2="140" y2="380"/> <line x1="240" y1="0" x2="220" y2="380"/>
+    <line x1="320" y1="0" x2="300" y2="380"/> <line x1="410" y1="0" x2="390" y2="380"/>
+    <line x1="490" y1="0" x2="470" y2="380"/> <line x1="570" y1="0" x2="550" y2="380"/>
+  </g>
+  
+  <!-- Liberty City Broker Bridge Cables & Skyline -->
+  <rect x="60" y="120" width="45" height="160" fill="#0d0d10"/>
+  <rect x="120" y="80" width="60" height="200" fill="#121214"/>
+  <rect x="195" y="140" width="50" height="140" fill="#0d0d10"/>
+  <rect x="360" y="100" width="55" height="180" fill="#141417"/>
+  <rect x="430" y="70" width="70" height="210" fill="#0d0d10"/>
+  
+  <!-- Bridge Tower Silhouette -->
+  <path d="M260 280 L280 60 L320 60 L340 280 Z" fill="#1a1917" stroke="#333" stroke-width="1"/>
+  <path d="M285 110 H315 M280 170 H320 M275 230 H325" stroke="#444" stroke-width="2"/>
+  <line x1="300" y1="60" x2="120" y2="280" stroke="#555" stroke-width="1.2" opacity="0.6"/>
+  <line x1="300" y1="60" x2="480" y2="280" stroke="#555" stroke-width="1.2" opacity="0.6"/>
+  
+  <!-- Niko Bellic silhouette in coat -->
+  <path d="M480 280 C480 230 495 210 505 190 C510 180 520 180 525 190 C535 210 550 230 550 280 Z" fill="#050505" stroke="#d97706" stroke-width="1" stroke-opacity="0.6"/>
+  <circle cx="515" cy="170" r="12" fill="#050505" stroke="#d97706" stroke-width="0.8"/>
+  
+  <!-- GTA IV Style Roman IV Roman numeral -->
+  <text x="40" y="70" font-family="'Pricedown', Impact, sans-serif" font-size="38" fill="#e5e5e5" letter-spacing="2">GRAND THEFT AUTO</text>
+  <text x="440" y="72" font-family="Times New Roman, serif" font-weight="bold" font-size="44" fill="#d97706">IV</text>
+  
+  <text x="40" y="325" font-family="monospace" font-size="12" font-weight="bold" fill="#d97706">LIBERTY CITY // 2008</text>
+  <text x="40" y="348" font-family="monospace" font-size="11" fill="#888">URBAN ISOLATION • RUSSIAN MAFIA NOIR • NIKO BELLIC</text>
+</svg>

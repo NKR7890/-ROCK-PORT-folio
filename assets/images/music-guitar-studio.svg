@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <radialGradient id="studioGlow" cx="45%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#2a0a0e"/>
+      <stop offset="50%" stop-color="#140507"/>
+      <stop offset="100%" stop-color="#060608"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#studioGlow)"/>
+  
+  <!-- Studio Rack Mount Units & Glowing Red VU Meters -->
+  <rect x="40" y="40" width="220" height="90" fill="#121318" stroke="#333" stroke-width="1.5"/>
+  <rect x="60" y="60" width="80" height="50" fill="#000" stroke="#e50914" stroke-width="1"/>
+  <line x1="100" y1="100" x2="125" y2="75" stroke="#e50914" stroke-width="2"/>
+  <text x="75" y="105" font-family="monospace" font-size="9" fill="#e50914">-3dB</text>
+  
+  <rect x="155" y="60" width="80" height="50" fill="#000" stroke="#e50914" stroke-width="1"/>
+  <line x1="195" y1="100" x2="220" y2="75" stroke="#e50914" stroke-width="2"/>
+  <text x="170" y="105" font-family="monospace" font-size="9" fill="#e50914">-3dB</text>
+  
+  <!-- Tube Amp Head with warm orange glowing vacuum tubes -->
+  <rect x="300" y="180" width="260" height="150" fill="#18181f" stroke="#444" stroke-width="2"/>
+  <rect x="320" y="200" width="220" height="60" fill="#0d0d12"/>
+  <!-- Glowing orange vacuum tubes -->
+  <circle cx="360" cy="230" r="16" fill="#f97316" opacity="0.8"/>
+  <circle cx="410" cy="230" r="16" fill="#f97316" opacity="0.8"/>
+  <circle cx="460" cy="230" r="16" fill="#f97316" opacity="0.8"/>
+  <circle cx="510" cy="230" r="16" fill="#f97316" opacity="0.8"/>
+  
+  <!-- Coiled Instrument Cable -->
+  <path d="M120 330 C160 300 180 360 220 320 C260 280 290 350 340 330" stroke="#111" stroke-width="6" fill="none"/>
+  
+  <!-- Heavy Overdrive Electric Guitar Silhouette -->
+  <path d="M120 180 L180 340 C170 360 140 365 110 350 C80 330 90 290 110 270 L80 180 Z" fill="#090a0f" stroke="#e50914" stroke-width="2"/>
+  <line x1="90" y1="180" x2="160" y2="340" stroke="#fff" stroke-width="0.8" opacity="0.7"/>
+  <line x1="95" y1="180" x2="165" y2="340" stroke="#fff" stroke-width="0.8" opacity="0.7"/>
+  
+  <text x="40" y="340" font-family="Impact, sans-serif" font-size="24" fill="#ffffff" letter-spacing="2">UNDERGROUND SESSION</text>
+  <text x="40" y="362" font-family="monospace" font-size="11" fill="#e50914">VALVE TUBE WARMTH // DISTORTED RIFFS // DIRECT INJECTION</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="viceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a0026"/>
+      <stop offset="45%" stop-color="#400b3f"/>
+      <stop offset="65%" stop-color="#9d174d"/>
+      <stop offset="85%" stop-color="#e11d48"/>
+      <stop offset="100%" stop-color="#0a0314"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#viceGrad)"/>
+  
+  <!-- 80s Grid Horizon -->
+  <g opacity="0.35">
+    <line x1="0" y1="260" x2="600" y2="260" stroke="#00f0ff" stroke-width="2"/>
+    <path d="M0 380 L200 260 M100 380 L250 260 M250 380 L290 260 M350 380 L310 260 M500 380 L350 260 M600 380 L400 260" stroke="#00f0ff" stroke-width="1.2"/>
+    <line x1="0" y1="280" x2="600" y2="280" stroke="#00f0ff" stroke-width="0.8"/>
+    <line x1="0" y1="310" x2="600" y2="310" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="0" y1="350" x2="600" y2="350" stroke="#00f0ff" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Big Synth Sun with horizontal scan slices -->
+  <circle cx="300" cy="170" r="85" fill="#fbbf24"/>
+  <rect x="200" y="145" width="200" height="4" fill="#400b3f"/>
+  <rect x="200" y="160" width="200" height="6" fill="#400b3f"/>
+  <rect x="200" y="180" width="200" height="8" fill="#400b3f"/>
+  <rect x="200" y="205" width="200" height="12" fill="#400b3f"/>
+  <rect x="200" y="230" width="200" height="16" fill="#400b3f"/>
+  
+  <!-- Neon Palm Trees Silhouettes -->
+  <path d="M60 280 Q75 180 120 110" stroke="#0f051d" stroke-width="12" fill="none"/>
+  <path d="M120 110 C80 90 40 100 20 120 M120 110 C100 80 80 60 40 70 M120 110 C120 70 140 50 170 60 M120 110 C150 80 180 90 200 110 M120 110 C140 120 150 150 160 180" stroke="#0f051d" stroke-width="6" fill="none" stroke-linecap="round"/>
+  
+  <path d="M540 280 Q525 180 480 110" stroke="#0f051d" stroke-width="12" fill="none"/>
+  <path d="M480 110 C520 90 560 100 580 120 M480 110 C500 80 520 60 560 70 M480 110 C480 70 460 50 430 60 M480 110 C450 80 420 90 400 110" stroke="#0f051d" stroke-width="6" fill="none" stroke-linecap="round"/>
+  
+  <!-- Ocean Beach Retro Car Silhouette -->
+  <path d="M210 270 C230 255 260 248 300 248 L360 248 C390 248 420 255 435 270 Z" fill="#0a0314" stroke="#ff007f" stroke-width="2"/>
+  
+  <!-- Vice City Typography -->
+  <text x="40" y="60" font-family="'Brush Script MT', cursive, sans-serif" font-size="44" fill="#ff007f" letter-spacing="1">Vice City</text>
+  <text x="40" y="85" font-family="sans-serif" font-weight="900" font-size="14" fill="#00f0ff" letter-spacing="4">GRAND THEFT AUTO</text>
+  <text x="40" y="340" font-family="monospace" font-size="11" fill="#f43f5e">1986 NOSTALGIA // SYNTH-DRIVEN // TOMMY VERCETTI EMPIRE</text>
+</svg>

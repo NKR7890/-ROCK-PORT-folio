@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAKSHATRA ATISH MESHRAM — Dark Cinematic Digital Identity</title>
+  <meta name="description" content="Personal digital universe of Nakshatra Atish Meshram — Underground Guitarist, Vocalist, Dark Sketch Artist, Gamer, and Aspiring Game Developer.">
+  <meta name="keywords" content="Nakshatra Meshram, Portfolio, Guitarist, Game Developer, Dark Art, Cyberpunk, NFS, Formula 1, Car Builds">
+  <meta name="author" content="Nakshatra Atish Meshram">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="NAKSHATRA ATISH MESHRAM — Dark Cinematic Digital Identity">
+  <meta property="og:description" content="Music in my veins. Horsepower in my head. Worlds in my mind. Explore the interactive portfolio.">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/avatar-silhouette.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- Custom Gritty Cursor -->
+  <div class="custom-cursor" aria-hidden="true"></div>
+  <div class="custom-cursor-dot" aria-hidden="true"></div>
+
+  <!-- Screen Atmospheric Overlays -->
+  <div class="crt-scanlines" aria-hidden="true"></div>
+  <div class="film-grain" aria-hidden="true"></div>
+  <div class="vignette-overlay" aria-hidden="true"></div>
+
+  <!-- Hidden HTML5 Audio Element for Background Music -->
+  <audio id="bg-audio" preload="auto" loop>
+    <source src="assets/audio/midnight-city.m4a" type="audio/mp4">
+    <source src="assets/audio/midnight-city.wav" type="audio/wav">
+  </audio>
+
+  <!-- ========================================================================
+       Site Header / Navigation Bar & Audio HUD
+       ======================================================================== -->
+  <header class="site-header">
+    <a href="#hero" class="brand-wrapper" aria-label="Nakshatra Atish Meshram Home">
+      <div class="brand-mark">NM</div>
+      <div class="brand-text">
+        <span class="brand-title">NAKSHATRA</span>
+        <span class="brand-sub">CORE // 084</span>
+      </div>
+    </a>
+
+    <!-- Main Navigation Menu -->
+    <nav aria-label="Main Navigation">
+      <ul class="nav-menu">
+        <li><a href="#hero" class="nav-link active">HOME</a></li>
+        <li><a href="#about" class="nav-link">ABOUT</a></li>
+        <li><a href="#music" class="nav-link">MUSIC</a></li>
+        <li><a href="#soundtrack" class="nav-link">SOUNDTRACK</a></li>
+        <li><a href="#art" class="nav-link">ART</a></li>
+        <li><a href="#gaming" class="nav-link">GAMING</a></li>
+        <li><a href="#gamedev" class="nav-link">DEV</a></li>
+        <li><a href="#race-weekend" class="nav-link">F1</a></li>
+        <li><a href="#the-garage" class="nav-link">GARAGE</a></li>
+        <li><a href="#contact" class="nav-link highlight">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header Actions & Audio HUD -->
+    <div class="header-actions">
+      <button class="audio-hud-btn" id="header-audio-toggle" title="Toggle Midnight City Soundtrack">
+        <span class="hud-icon">▶</span>
+        <span class="hud-label">AUDIO: MUTED</span>
+        <div class="audio-equalizer" aria-hidden="true">
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+          <span class="eq-bar"></span>
+        </div>
+      </button>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Persistent Floating Soundtrack Player (Bottom Right)
+       ======================================================================== -->
+  <aside class="floating-soundtrack-bar" aria-label="Soundtrack Player">
+    <div class="soundtrack-disc" title="M83 - Midnight City Vinyl"></div>
+    <div class="soundtrack-info">
+      <span class="soundtrack-title">Midnight City [Night Drive]</span>
+      <span class="soundtrack-artist">M83 // SYNTHWAVE MIX</span>
+      <div class="playback-bar">
+        <input type="range" class="timeline-slider" id="audio-timeline" min="0" max="100" value="0" aria-label="Audio timeline">
+        <span id="audio-time">0:00 / 0:36</span>
+      </div>
+    </div>
+    <div class="soundtrack-controls">
+      <canvas class="canvas-visualizer" width="60" height="20" aria-hidden="true"></canvas>
+      <button class="btn-sound-ctrl" id="floating-play-btn" title="Play / Pause Audio">▶</button>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       1. HERO SECTION — The First Impression
+       ======================================================================== -->
+  <section class="hero-section" id="hero">
+    <canvas id="hero-canvas"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-classified-bar">
+        <span>ID: NM-084</span>
+        <span>LOCATION: UNDERGROUND PROTOCOL</span>
+        <span class="status-live">● SYS.STATUS: ONLINE</span>
+      </div>
+
+      <div class="hero-name-container">
+        <h1 class="hero-name glitch-text" data-text="NAKSHATRA ATISH MESHRAM">
+          <span class="first-name">NAKSHATRA</span>
+          <span class="last-name">ATISH MESHRAM</span>
+        </h1>
+      </div>
+
+      <div class="identity-statement">
+        <span class="highlight-word">GUITARIST</span>. 
+        <span class="highlight-word">SINGER</span>. 
+        <span class="highlight-word">ARTIST</span>. 
+        <span class="highlight-word">GAMER</span>. 
+        <span class="highlight-word">GAME DEVELOPER</span>.
+      </div>
+
+      <p class="hero-tagline">
+        "Creating sounds, sketching worlds, and building experiences. Somewhere between six strings, four wheels, and infinite worlds."
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#about" class="btn btn-primary">
+          <span>EXPLORE MY WORLD</span>
+          <span aria-hidden="true">→</span>
+        </a>
+        <a href="#art" class="btn btn-outline">
+          <span>VIEW MY WORK</span>
+        </a>
+        <button class="btn btn-cyan btn-play-soundtrack" id="hero-play-midnight">
+          <span>INITIALIZE SOUNDTRACK [▶]</span>
+        </button>
+      </div>
+
+      <div class="hero-hud-footer">
+        <div>
+          <span>PRIMARY FREQ: 105 BPM (B MINOR)</span>
+        </div>
+        <a href="#about" class="scroll-indicator">
+          <span>SCROLL DOWN</span>
+          <span class="scroll-arrow" aria-hidden="true">▼</span>
+        </a>
+        <div>
+          <span>EST. LATENCY: 12ms // NIGHT MODE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       2. ABOUT ME — Beyond The Screen
+       ======================================================================== -->
+  <section class="section" id="about">
+    <div class="section-header">
+      <div class="classified-tag">DOSSIER // SECTION 01</div>
+      <h2 class="section-title">ABOUT <span class="accent">ME</span></h2>
+      <p class="section-desc">Independent, curious, rebellious, and deeply connected to music, art, games, and high-octane engineering.</p>
+    </div>
+
+    <div class="about-grid">
+      <!-- Visual Column -->
+      <div class="about-visual-column">
+        <div class="about-portrait-frame tactical-box">
+          <img src="assets/images/avatar-silhouette.svg" alt="Nakshatra Silhouette with Guitar" class="about-portrait-img">
+          <div class="portrait-overlay-meta">
+            <div>
+              <span class="classified-tag" style="margin-bottom: 0;">SUBJECT: NAKSHATRA</span>
+              <p style="font-family: var(--font-mono); font-size: 0.72rem; color: #888; margin-top: 4px;">OPERATOR / MULTIDISCIPLINARY CREATIVE</p>
+            </div>
+            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--crimson-bright);">SYS.V2.0</span>
+          </div>
+        </div>
+        <span class="handwritten-annotation">"Lost in sound, sketched in graphite, fueled by octane."</span>
+      </div>
+
+      <!-- Text / Editorial Column -->
+      <div class="about-text-column">
+        <blockquote class="quote-block">
+          "I'm drawn to things that make you feel something — a guitar riff that stays in your head, a drawing that tells a story without words, or a game world that makes you forget you're sitting in front of a screen. I explore music, visual art, gaming, and game development because each gives me a different way to create and experience worlds."
+        </blockquote>
+
+        <p style="color: var(--text-secondary); margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.8;">
+          I am not a corporate professional with sanitized resumes. My work is raw, atmospheric, and cinematic—steeped in the dark noir grit of graphic novels, psychological survival thrillers, and the deafening rush of high-performance engines at midnight.
+        </p>
+
+        <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.8;">
+          Whether I am holding a guitar and singing into a condenser mic, rendering gothic architecture under moonlight, or building interactive prototypes in game engines, the goal remains identical: crafting immersion so potent you forget the physical room around you.
+        </p>
+
+        <!-- The 4 Main Disciplines -->
+        <div class="about-pillars">
+          <div class="pillar-card">
+            <div class="pillar-icon">🎸</div>
+            <h3 class="pillar-title">SOUND</h3>
+            <p class="pillar-desc">Electric & acoustic guitar, lead vocals, alt-rock riffs, and nocturnal harmonies.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">🖋️</div>
+            <h3 class="pillar-title">ART</h3>
+            <p class="pillar-desc">Noir graphite sketches, dark gothic paintings, and surrealist concept art.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">🎮</div>
+            <h3 class="pillar-title">PLAY</h3>
+            <p class="pillar-desc">Immersive atmospheric worlds, survival horror dread, and open-world grit.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">⚡</div>
+            <h3 class="pillar-title">CREATE</h3>
+            <p class="pillar-desc">Aspiring game creator, interactive storytelling, and Unreal Engine mechanics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. MUSIC SECTION — Sound Is My Language
+       ======================================================================== -->
+  <section class="section" id="music">
+    <div class="section-header">
+      <div class="classified-tag">ACOUSTICS // SECTION 02</div>
+      <h2 class="section-title">SOUND IS MY <span class="accent">LANGUAGE</span></h2>
+      <p class="section-desc">Guitarist, vocalist, and sound sculptor. Capturing raw valve-tube distortion, acoustic warmth, and late-night emotion.</p>
+    </div>
+
+    <!-- Underground Studio Spotlight Hero -->
+    <div class="music-studio-hero">
+      <div class="music-hero-text">
+        <h3>SIMULTANEOUS STRINGS &amp; VOCALS</h3>
+        <p>
+          Playing guitar while singing is second nature. From stripped-down acoustic ballads drenched in reverb to heavy overdriven rock progressions that vibrate the floorboards, music is where adrenaline and raw introspection collide.
+        </p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="https://youtube.com" target="_blank" rel="noopener" class="btn btn-primary">
+            <span>YOUTUBE SESSIONS</span>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="btn btn-outline">
+            <span>INSTAGRAM CLIPS</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Interactive Audio Player Card -->
+      <div class="audio-interactive-card active tactical-box">
+        <div class="track-header">
+          <div class="track-details">
+            <h4>OVERDRIVE // MIDNIGHT RIFF</h4>
+            <span>ORIGINAL SESSION TAKE • STEREO 44.1kHz</span>
+          </div>
+          <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--crimson-bright);">[REC] ACTIVE</span>
+        </div>
+
+        <div class="waveform-container" aria-hidden="true">
+          <div class="waveform-bars">
+            <div class="waveform-bar" style="height: 35%;"></div>
+            <div class="waveform-bar" style="height: 60%;"></div>
+            <div class="waveform-bar" style="height: 90%;"></div>
+            <div class="waveform-bar" style="height: 45%;"></div>
+            <div class="waveform-bar" style="height: 75%;"></div>
+            <div class="waveform-bar" style="height: 100%;"></div>
+            <div class="waveform-bar" style="height: 85%;"></div>
+            <div class="waveform-bar" style="height: 50%;"></div>
+            <div class="waveform-bar" style="height: 95%;"></div>
+            <div class="waveform-bar" style="height: 70%;"></div>
+            <div class="waveform-bar" style="height: 40%;"></div>
+            <div class="waveform-bar" style="height: 80%;"></div>
+            <div class="waveform-bar" style="height: 65%;"></div>
+            <div class="waveform-bar" style="height: 30%;"></div>
+            <div class="waveform-bar" style="height: 85%;"></div>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-family: var(--font-mono); font-size: 0.72rem; color: #888;">GENRE: HEAVY ALT-ROCK / NOCTURNE</span>
+          <button class="btn btn-primary btn-play-soundtrack" style="padding: 0.4rem 1rem; font-size: 0.8rem;">
+            <span>TOGGLE PLAYBACK</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Music Showcase Grid -->
+    <div class="music-grid">
+      <!-- Card 1: Electric Riffs -->
+      <div class="performance-card tactical-box">
+        <div class="performance-media">
+          <img src="assets/images/music-guitar-studio.svg" alt="Underground Recording Studio" class="performance-img">
+          <button class="play-overlay-btn btn-play-soundtrack" aria-label="Play guitar performance">▶</button>
+        </div>
+        <div class="performance-body">
+          <h4>OVERDRIVEN ELECTRIC GUITAR</h4>
+          <p>Heavy riffs, screaming tube saturation, and soaring guitar leads inspired by 2000s alternative rock and cyberpunk electronic aggression.</p>
+          <div class="dossier-meta-footer">
+            <span>GEAR: CUSTOM STRAT / HIGH-GAIN TUBE HEAD</span>
+            <span style="color: var(--crimson-bright);">OVERDRIVE</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Acoustic & Vocals -->
+      <div class="performance-card tactical-box">
+        <div class="performance-media">
+          <img src="assets/images/music-vocals.svg" alt="Studio Condenser Microphone and Acoustic" class="performance-img">
+          <button class="play-overlay-btn btn-play-soundtrack" aria-label="Play vocal session">▶</button>
+        </div>
+        <div class="performance-body">
+          <h4>RAW VOCALS &amp; ACOUSTIC COVERS</h4>
+          <p>Intimate fingerstyle acoustic sessions paired with emotive, unfiltered lead vocals recorded under warm late-night studio lighting.</p>
+          <div class="dossier-meta-footer">
+            <span>MIC: LARGE CONDENSER • ACOUSTIC DREADNOUGHT</span>
+            <span style="color: var(--crimson-bright);">VOCALS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Instrumental Production -->
+      <div class="performance-card tactical-box">
+        <div class="performance-media">
+          <img src="assets/images/artist-linkin-park.svg" alt="Soundtrack Concept and Rhythm" class="performance-img">
+          <button class="play-overlay-btn btn-play-soundtrack" aria-label="Play production track">▶</button>
+        </div>
+        <div class="performance-body">
+          <h4>CINEMATIC AUDIO TEXTURES</h4>
+          <p>Layered synthesizers, aggressive basslines, and punchy drum breaks designed for game soundtracks and high-speed night drives.</p>
+          <div class="dossier-meta-footer">
+            <span>FMT: 24-BIT STEMS • ANALOG TAPE WARMTH</span>
+            <span style="color: var(--crimson-bright);">PROD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. MY SOUNDTRACK — The Soundtrack To My World
+       ======================================================================== -->
+  <section class="section" id="soundtrack">
+    <div class="section-header">
+      <div class="classified-tag">FREQUENCY ARCHIVE // SECTION 03</div>
+      <h2 class="section-title">MY <span class="accent">SOUNDTRACK</span></h2>
+      <p class="section-desc">A late-night listening room and vintage music archive. The moods, emotions, and frequencies that fuel my creative engine.</p>
+    </div>
+
+    <!-- Personal Statement Banner -->
+    <div class="soundtrack-intro-banner">
+      <p class="soundtrack-quote">
+        "Somewhere between distorted guitars, midnight melodies, dreamy vocals, and songs that hit a little too close to home, music became more than something I listen to. It's something I want to create."
+      </p>
+      <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--crimson-bright); border-left: 2px solid var(--crimson-bright); padding-left: 1rem;">
+        VAULT // 06 ARTISTS<br>
+        MOOD: LATE-NIGHT NOIR
+      </div>
+    </div>
+
+    <!-- Featured Centerpiece: Midnight City Card -->
+    <div class="midnight-city-card">
+      <div class="mc-vinyl-wrap btn-play-soundtrack" title="Click to spin vinyl and play Midnight City">
+        <div class="mc-vinyl-center">M83</div>
+      </div>
+      <div class="mc-meta">
+        <h3>MIDNIGHT CITY</h3>
+        <span class="mc-artist">M83 // "HURRY UP, WE'RE DREAMING" (105 BPM • B MINOR)</span>
+        <p>
+          The definitive nocturnal anthem. Shimmering synth pads, rolling electronic bass, and that soaring vocoded saxophone hook. The ultimate sonic companion for racing through neon-lit streets at 2 AM.
+        </p>
+      </div>
+      <div>
+        <button class="btn btn-primary btn-play-soundtrack" id="btn-mc-card-play">
+          <span>PLAY TRACK</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mood Filter Chips -->
+    <div class="mood-filter-bar">
+      <button class="mood-chip active" data-mood="all">ALL FREQUENCIES</button>
+      <button class="mood-chip" data-mood="after-midnight">AFTER MIDNIGHT</button>
+      <button class="mood-chip" data-mood="broken-frequencies">BROKEN FREQUENCIES</button>
+      <button class="mood-chip" data-mood="slow-motion">SLOW MOTION</button>
+      <button class="mood-chip" data-mood="psychedelic">PSYCHEDELIC ESCAPE</button>
+      <button class="mood-chip" data-mood="soul-stories">SOUL &amp; STORIES</button>
+    </div>
+
+    <!-- 6 Featured Artists Cards -->
+    <div class="soundtrack-artists-grid">
+      <!-- 1. Linkin Park -->
+      <div class="artist-card tactical-box" data-mood="broken-frequencies">
+        <div class="artist-card-media">
+          <img src="assets/images/artist-linkin-park.svg" alt="Linkin Park" class="artist-card-img">
+        </div>
+        <div class="artist-card-body">
+          <h4 class="artist-name">LINKIN PARK</h4>
+          <span class="artist-mood-tag">BROKEN FREQUENCIES • NU-METAL / ALT ROCK</span>
+          <p class="artist-desc">
+            Raw emotional catharsis, Chester's unforgettable vocal intensity, and distorted riffs that defined an entire generation of rebellious, introspective souls.
+          </p>
+          <div class="dossier-meta-footer">
+            <span>INSPIRATION: VOCAL POWER &amp; GUITAR CRUNCH</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. The Neighbourhood -->
+      <div class="artist-card tactical-box" data-mood="after-midnight">
+        <div class="artist-card-media">
+          <img src="assets/images/artist-neighbourhood.svg" alt="The Neighbourhood" class="artist-card-img">
+        </div>
+        <div class="artist-card-body">
+          <h4 class="artist-name">THE NEIGHBOURHOOD</h4>
+          <span class="artist-mood-tag">AFTER MIDNIGHT • DARK ALT POP / R&amp;B</span>
+          <p class="artist-desc">
+            High-contrast black-and-white visual aesthetic, moody 808s, and nocturnal atmosphere. Songs that feel like walking through empty city streets in a leather jacket.
+          </p>
+          <div class="dossier-meta-footer">
+            <span>INSPIRATION: MONOCHROMATIC MOOD &amp; GROOVE</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Cigarettes After Sex -->
+      <div class="artist-card tactical-box" data-mood="slow-motion">
+        <div class="artist-card-media">
+          <img src="assets/images/artist-cas.svg" alt="Cigarettes After Sex" class="artist-card-img">
+        </div>
+        <div class="artist-card-body">
+          <h4 class="artist-name">CIGARETTES AFTER SEX</h4>
+          <span class="artist-mood-tag">SLOW MOTION • AMBIENT DREAM POP</span>
+          <p class="artist-desc">
+            Gentle tremolo guitars, whispered androgynous vocals, and slow reverbs that stretch time. Pure late-night intimacy and melancholic romanticism.
+          </p>
+          <div class="dossier-meta-footer">
+            <span>INSPIRATION: REVERB SPACE &amp; DELICATE TEMPO</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Lana Del Rey -->
+      <div class="artist-card tactical-box" data-mood="slow-motion">
+        <div class="artist-card-media">
+          <img src="assets/images/artist-lana.svg" alt="Lana Del Rey" class="artist-card-img">
+        </div>
+        <div class="artist-card-body">
+          <h4 class="artist-name">LANA DEL REY</h4>
+          <span class="artist-mood-tag">SLOW MOTION • CINEMATIC MELANCHOLY</span>
+          <p class="artist-desc">
+            Faded Hollywood glamour, dark romance, vintage Americana, and poetic storytelling drenched in sadness. Songs that play like classic cinema soundtracks.
+          </p>
+          <div class="dossier-meta-footer">
+            <span>INSPIRATION: LYRICAL DEPTH &amp; CINEMATIC STRINGS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Arijit Singh -->
+      <div class="artist-card tactical-box" data-mood="soul-stories">
+        <div class="artist-card-media">
+          <img src="assets/images/artist-arijit.svg" alt="Arijit Singh" class="artist-card-img">
+        </div>
+        <div class="artist-card-body">
+          <h4 class="artist-name">ARIJIT SINGH</h4>
+          <span class="artist-mood-tag">SOUL &amp; STORIES • SOULFUL MELODIES</span>
+          <p class="artist-desc">
+            Soul-piercing vocal expression, nuanced vibrato, and heartfelt acoustic melodies that convey heartache and longing with unmatched vocal authenticity.
+          </p>
+          <div class="dossier-meta-footer">
+            <span>INSPIRATION: VOCAL DYNAMICS &amp; MELODIC SOUL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Tame Impala -->
+      <div class="artist-card tactical-box" data-mood="psychedelic">
+        <div class="artist-card-media">
+          <img src="assets/images/artist-tame-impala.svg" alt="Tame Impala" class="artist-card-img">
+        </div>
+        <div class="artist-card-body">
+          <h4 class="artist-name">TAME IMPALA</h4>
+          <span class="artist-mood-tag">PSYCHEDELIC ESCAPE • PSYCH-POP / SYNTH</span>
+          <p class="artist-desc">
+            Hypnotic basslines, phased drums, and kaleidoscopic synthesizer production. Kevin Parker's obsessive studio precision creates worlds you get lost inside.
+          </p>
+          <div class="dossier-meta-footer">
+            <span>INSPIRATION: ANALOG SYNTHESIS &amp; RHYTHMIC SWAGGER</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. ART SECTION — Sketches From Another World
+       ======================================================================== -->
+  <section class="section" id="art">
+    <div class="section-header">
+      <div class="classified-tag">VISUAL GALLERY // SECTION 04</div>
+      <h2 class="section-title">SKETCHES FROM <span class="accent">ANOTHER WORLD</span></h2>
+      <p class="section-desc">Dark noir sketches, psychological concept art, gothic architecture, and surrealist paintings exploring human mystery.</p>
+    </div>
+
+    <!-- Gallery Categories Filter -->
+    <div class="gallery-filter-bar">
+      <button class="art-filter-btn active" data-filter="all">ALL ARTWORKS</button>
+      <button class="art-filter-btn" data-filter="dark-art">DARK ART</button>
+      <button class="art-filter-btn" data-filter="paintings">PAINTINGS</button>
+      <button class="art-filter-btn" data-filter="sketches">PENCIL SKETCHES</button>
+      <button class="art-filter-btn" data-filter="portraits">PORTRAITS</button>
+      <button class="art-filter-btn" data-filter="experimental">EXPERIMENTAL</button>
+    </div>
+
+    <!-- Masonry Gallery Grid -->
+    <div class="art-masonry-grid">
+      <!-- User Uploaded Art 1: Fallen Angel Statue -->
+      <div class="art-item-card tall tactical-box" data-category="dark-art" 
+           data-desc="A brooding stone monument in an overgrown fog-shrouded cemetery. Feathered raven wings spread in solemn silence beneath a floating celestial halo. Concept exploration in gothic solemnity and mortality.">
+        <div class="art-image-wrapper">
+          <img src="assets/images/art-fallen-angel.jpg" alt="Fallen Seraphim in the Mist" class="art-img">
+          <div class="art-hover-overlay">
+            <span class="art-overlay-category">DARK ART // GOTHIC</span>
+            <h3 class="art-overlay-title">FALLEN SERAPHIM</h3>
+            <p class="art-overlay-meta">Stone, mist &amp; raven feathers. Click to view high-resolution dossier.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Uploaded Art 2: Gothic Cathedral Moonlight -->
+      <div class="art-item-card tall tactical-box" data-category="dark-art"
+           data-desc="Towering gothic cathedral buttresses and intricate rose windows bathed in the cold light of a full moon. A solitary armored figure gazes out over the midnight abyss from the cathedral parapet.">
+        <div class="art-image-wrapper">
+          <img src="assets/images/art-gothic-cathedral.jpg" alt="Nocturne Cathedral" class="art-img">
+          <div class="art-hover-overlay">
+            <span class="art-overlay-category">DARK ART // NOIR FANTASY</span>
+            <h3 class="art-overlay-title">NOCTURNE CATHEDRAL</h3>
+            <p class="art-overlay-meta">Cold moonlight, towering spires &amp; stone gargoyles.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Uploaded Art 3: Eldritch Surreal Staircase -->
+      <div class="art-item-card tactical-box" data-category="paintings"
+           data-desc="Oil study of an ascending silhouette on a creaking wooden staircase, while writhing, cosmic darkness with ancient unblinking eyes coils up the cracked plaster walls. Psychological horror rendered through vivid brushstrokes.">
+        <div class="art-image-wrapper">
+          <img src="assets/images/art-eldritch-staircase.jpg" alt="Descent into the Unknown" class="art-img">
+          <div class="art-hover-overlay">
+            <span class="art-overlay-category">PAINTINGS // SURREALISM</span>
+            <h3 class="art-overlay-title">THE WATCHING WALLS</h3>
+            <p class="art-overlay-meta">Oil on canvas. Swirling shadows, eldritch eyes, and the climb toward the light.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Artwork 4: Noir Pencil Sketch -->
+      <div class="art-item-card tactical-box" data-category="sketches"
+           data-desc="Heavy graphite crosshatching capturing the world-weary visage of a noir detective under harsh streetlamp shadows. Study in contrast, facial anatomy, and graphic novel storytelling.">
+        <div class="art-image-wrapper">
+          <img src="assets/images/art-pencil-noir.svg" alt="Noir Detective Charcoal Study" class="art-img">
+          <div class="art-hover-overlay">
+            <span class="art-overlay-category">PENCIL SKETCHES // PORTRAITS</span>
+            <h3 class="art-overlay-title">THE WEARY DETECTIVE</h3>
+            <p class="art-overlay-meta">6B graphite &amp; charcoal on heavy textured paper.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. GAMING SECTION — Worlds That Shaped My Imagination
+       ======================================================================== -->
+  <section class="section" id="gaming">
+    <div class="section-header">
+      <div class="classified-tag">CLASSIFIED DOSSIERS // SECTION 05</div>
+      <h2 class="section-title">WORLDS THAT <span class="accent">SHAPED MY IMAGINATION</span></h2>
+      <p class="section-desc">Interactive archives of the video games whose atmospheres, soundscapes, and storytelling redefined how I perceive interactive media.</p>
+    </div>
+
+    <div class="gaming-grid">
+      <!-- 1. NFS Most Wanted 2005 -->
+      <div class="game-dossier-card tactical-box">
+        <div class="game-card-media">
+          <img src="assets/images/game-nfs-mw.svg" alt="Need for Speed Most Wanted 2005" class="game-card-img">
+          <div class="dossier-stamp">ARCHIVE #01</div>
+        </div>
+        <div class="game-card-body">
+          <h3 class="game-title">NEED FOR SPEED: MOST WANTED (2005)</h3>
+          <span class="game-genre-tag">STREET RACING // ROCKPORT PD // HIGH HEAT</span>
+          <p class="game-notes">
+            Street racing perfection. The iconic silver-and-blue BMW M3 GTR, razor-sharp police pursuits, autumn yellow bloom, and relentless rock/breakbeat adrenaline.
+          </p>
+          <div class="dossier-meta-footer">
+            <button class="btn btn-outline btn-inspect-dossier" data-game="nfs-mw" style="padding: 0.35rem 0.8rem; font-size: 0.72rem;">
+              INSPECT DOSSIER
+            </button>
+            <span>STATUS: COMPLETED</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. GTA Vice City -->
+      <div class="game-dossier-card tactical-box">
+        <div class="game-card-media">
+          <img src="assets/images/game-vice-city.svg" alt="Grand Theft Auto Vice City" class="game-card-img">
+          <div class="dossier-stamp">ARCHIVE #02</div>
+        </div>
+        <div class="game-card-body">
+          <h3 class="game-title">GRAND THEFT AUTO: VICE CITY</h3>
+          <span class="game-genre-tag">NEON NOSTALGIA // SYNTH-DRIVEN // 1986</span>
+          <p class="game-notes">
+            Pastel pinks and electric cyan, palm tree silhouettes at dusk, synthwave radio, and Tommy Vercetti taking over a sun-soaked criminal empire.
+          </p>
+          <div class="dossier-meta-footer">
+            <button class="btn btn-outline btn-inspect-dossier" data-game="vice-city" style="padding: 0.35rem 0.8rem; font-size: 0.72rem;">
+              INSPECT DOSSIER
+            </button>
+            <span>STATUS: REVERED</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. GTA IV -->
+      <div class="game-dossier-card tactical-box">
+        <div class="game-card-media">
+          <img src="assets/images/game-gta4.svg" alt="Grand Theft Auto IV" class="game-card-img">
+          <div class="dossier-stamp">ARCHIVE #03</div>
+        </div>
+        <div class="game-card-body">
+          <h3 class="game-title">GRAND THEFT AUTO IV</h3>
+          <span class="game-genre-tag">URBAN ISOLATION // GRITTY REALISM // LIBERTY CITY</span>
+          <p class="game-notes">
+            Cold, grey, and brutally grounded. Niko Bellic's somber immigrant tragedy amidst rain-drenched Broker streets and unapologetic Russian mafia noir.
+          </p>
+          <div class="dossier-meta-footer">
+            <button class="btn btn-outline btn-inspect-dossier" data-game="gta4" style="padding: 0.35rem 0.8rem; font-size: 0.72rem;">
+              INSPECT DOSSIER
+            </button>
+            <span>STATUS: MASTERPIECE</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Cyberpunk 2077 -->
+      <div class="game-dossier-card tactical-box">
+        <div class="game-card-media">
+          <img src="assets/images/game-cyberpunk.svg" alt="Cyberpunk 2077" class="game-card-img">
+          <div class="dossier-stamp">ARCHIVE #04</div>
+        </div>
+        <div class="game-card-body">
+          <h3 class="game-title">CYBERPUNK 2077</h3>
+          <span class="game-genre-tag">FUTURISTIC DYSTOPIA // CYBERNETICS // NIGHT CITY</span>
+          <p class="game-notes">
+            Towering megabuildings piercing toxic clouds, chrome implants, rainy neon alleys, and existential struggles against corporate omnipotence.
+          </p>
+          <div class="dossier-meta-footer">
+            <button class="btn btn-outline btn-inspect-dossier" data-game="cyberpunk" style="padding: 0.35rem 0.8rem; font-size: 0.72rem;">
+              INSPECT DOSSIER
+            </button>
+            <span>STATUS: REPLAYED</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Resident Evil Series -->
+      <div class="game-dossier-card tactical-box">
+        <div class="game-card-media">
+          <img src="assets/images/game-resident-evil.svg" alt="Resident Evil Series" class="game-card-img">
+          <div class="dossier-stamp">ARCHIVE #05</div>
+        </div>
+        <div class="game-card-body">
+          <h3 class="game-title">RESIDENT EVIL SERIES</h3>
+          <span class="game-genre-tag">SURVIVAL HORROR // BIOHAZARD // PSYCHOLOGICAL TENSION</span>
+          <p class="game-notes">
+            The eerie silence of the Spencer Mansion, Raccoon City police sirens fading into screams, scarcity of ammunition, and relentless psychological dread.
+          </p>
+          <div class="dossier-meta-footer">
+            <button class="btn btn-outline btn-inspect-dossier" data-game="resident-evil" style="padding: 0.35rem 0.8rem; font-size: 0.72rem;">
+              INSPECT DOSSIER
+            </button>
+            <span>STATUS: SURVIVED</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. GTA V -->
+      <div class="game-dossier-card tactical-box">
+        <div class="game-card-media">
+          <img src="assets/images/game-gta5.svg" alt="Grand Theft Auto V" class="game-card-img">
+          <div class="dossier-stamp">ARCHIVE #06</div>
+        </div>
+        <div class="game-card-body">
+          <h3 class="game-title">GRAND THEFT AUTO V</h3>
+          <span class="game-genre-tag">OPEN-WORLD FREEDOM // LOS SANTOS // HEIST CHAOS</span>
+          <p class="game-notes">
+            Sprawling sunshine satire, Vinewood smog, high-stakes bank heists, and cinematic multi-protagonist mayhem across Southern San Andreas.
+          </p>
+          <div class="dossier-meta-footer">
+            <button class="btn btn-outline btn-inspect-dossier" data-game="gta5" style="padding: 0.35rem 0.8rem; font-size: 0.72rem;">
+              INSPECT DOSSIER
+            </button>
+            <span>STATUS: COMPLETED</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. The Wolf Among Us -->
+      <div class="game-dossier-card tactical-box">
+        <div class="game-card-media">
+          <img src="assets/images/game-wolf-among-us.svg" alt="The Wolf Among Us" class="game-card-img">
+          <div class="dossier-stamp">ARCHIVE #07</div>
+        </div>
+        <div class="game-card-body">
+          <h3 class="game-title">THE WOLF AMONG US</h3>
+          <span class="game-genre-tag">FABLETOWN NOIR // MATURE GRAPHIC NOVEL // BIGBY WOLF</span>
+          <p class="game-notes">
+            Hard-boiled detective noir with fairytale creatures trapped in modern grime. Bruised neon purples, cigarette smoke, and moral complexity.
+          </p>
+          <div class="dossier-meta-footer">
+            <button class="btn btn-outline btn-inspect-dossier" data-game="wolf-among-us" style="padding: 0.35rem 0.8rem; font-size: 0.72rem;">
+              INSPECT DOSSIER
+            </button>
+            <span>STATUS: COMPLETED</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. GAME DEVELOPMENT — From Player To Creator
+       ======================================================================== -->
+  <section class="section" id="gamedev">
+    <div class="section-header">
+      <div class="classified-tag">ENGINE LAB // SECTION 06</div>
+      <h2 class="section-title">FROM PLAYER TO <span class="accent">CREATOR</span></h2>
+      <p class="section-desc">Bridging curiosity, mechanics, volumetric shaders, and interactive storytelling. Developing atmospheric prototypes.</p>
+    </div>
+
+    <!-- Tech Stack Overview -->
+    <div class="dev-overview-card tactical-box">
+      <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: #fff; letter-spacing: 1.5px;">
+        TOOLCHAIN &amp; DEVELOPMENT STACK
+      </h3>
+      <div class="tech-stack-ribbon">
+        <span class="tech-badge">UNREAL ENGINE 5</span>
+        <span class="tech-badge">UNITY 3D</span>
+        <span class="tech-badge">C++ PROGRAMMING</span>
+        <span class="tech-badge">C# SCRIPTING</span>
+        <span class="tech-badge">BLENDER 3D</span>
+        <span class="tech-badge">HLSL / GLSL SHADERS</span>
+        <span class="tech-badge">FMOD AUDIO ENGINE</span>
+        <span class="tech-badge">GIT VERSION CONTROL</span>
+      </div>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="dev-projects-grid">
+      <!-- Project 1: Voidfall (Featured) -->
+      <div class="dev-project-card tactical-box">
+        <div class="dev-card-media">
+          <img src="assets/images/gamedev-voidfall.svg" alt="Project Voidfall Screenshot" class="dev-card-img">
+        </div>
+        <div class="dev-card-body">
+          <span class="project-status-badge">IN ACTIVE PROTOTYPING</span>
+          <h3 class="dev-card-title">PROJECT: VOIDFALL</h3>
+          <p class="dev-card-desc">
+            First-person psychological survival horror prototype built in Unreal Engine 5. Explores claustrophobic underground research corridors, volumetric fog, dynamic flashlight shadows, and sanity degradation mechanics.
+          </p>
+
+          <table class="project-spec-table">
+            <tbody>
+              <tr>
+                <td>GENRE</td>
+                <td>Psychological Survival Horror</td>
+              </tr>
+              <tr>
+                <td>ENGINE</td>
+                <td>Unreal Engine 5.3 (Lumen &amp; Nanite)</td>
+              </tr>
+              <tr>
+                <td>STATUS</td>
+                <td>Playable Alpha Mechanics</td>
+              </tr>
+              <tr>
+                <td>CHALLENGE</td>
+                <td>Volumetric fog optimization &amp; dynamic audio occlusion</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div style="display: flex; gap: 0.8rem;">
+            <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.8rem;">
+              GITHUB REPO
+            </a>
+            <button class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.8rem;" onclick="alert('Project Voidfall demo build is packaged for internal testing. Contact for access.')">
+              REQUEST DEMO
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Drift Protocol -->
+      <div class="dev-project-card tactical-box">
+        <div class="dev-card-media">
+          <img src="assets/images/car-skyline-r34.svg" alt="Project Drift Protocol" class="dev-card-img">
+        </div>
+        <div class="dev-card-body">
+          <span class="project-status-badge">PHYSICS R&amp;D</span>
+          <h3 class="dev-card-title">DRIFT PROTOCOL // 04</h3>
+          <p class="dev-card-desc">
+            Physics-based arcade midnight drift simulator inspired by 90s JDM touge battles and Need for Speed handling models. Custom slip-angle friction math, tire smoke particles, and dynamic counter-steering feedback.
+          </p>
+
+          <table class="project-spec-table">
+            <tbody>
+              <tr>
+                <td>GENRE</td>
+                <td>Arcade Midnight Touge Racer</td>
+              </tr>
+              <tr>
+                <td>ENGINE</td>
+                <td>Unity 2023 (Custom Wheel Colliders)</td>
+              </tr>
+              <tr>
+                <td>STATUS</td>
+                <td>Tire Physics &amp; Slip Calculation Complete</td>
+              </tr>
+              <tr>
+                <td>CHALLENGE</td>
+                <td>Balancing realistic weight transfer with arcade accessibility</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div style="display: flex; gap: 0.8rem;">
+            <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.8rem;">
+              SOURCE CODE
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. FORMULA 1 — Race Weekend
+       ======================================================================== -->
+  <section class="section" id="race-weekend">
+    <div class="section-header">
+      <div class="classified-tag">MOTORSPORT // SECTION 07</div>
+      <h2 class="section-title">RACE <span class="accent">WEEKEND</span></h2>
+      <p class="section-desc">The drama of night races, glowing titanium skid plates, 350 km/h slipstreams, and the merciless precision of telemetry data.</p>
+    </div>
+
+    <div class="f1-showcase-container">
+      <!-- User's Vintage Ferrari F1 Driver Image -->
+      <div class="f1-driver-frame tactical-box">
+        <img src="assets/images/f1-vintage-ferrari.jpg" alt="Vintage Ferrari F1 Driver in Helmet" class="f1-driver-img">
+        <div class="portrait-overlay-meta">
+          <div>
+            <span class="classified-tag" style="margin-bottom: 0;">CLASSIC F1 ERA</span>
+            <p style="font-family: var(--font-mono); font-size: 0.72rem; color: #aaa; margin-top: 4px;">RAW MECHANICAL PURITY // ZERO DRIVER AIDS</p>
+          </div>
+          <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--crimson-bright);">MONZA V12</span>
+        </div>
+      </div>
+
+      <!-- Telemetry Dashboard -->
+      <div class="f1-telemetry-hud tactical-box">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-dim); padding-bottom: 1rem;">
+          <div>
+            <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--crimson-bright); display: block;">CIRCUIT TELEMETRY MONITOR</span>
+            <h3 id="f1-track-name" style="font-family: var(--font-heading); font-size: 1.5rem; color: #fff;">AUTODROMO NAZIONALE MONZA</h3>
+          </div>
+          <div>
+            <select id="f1-circuit-select" class="form-select" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;" aria-label="Select F1 Circuit">
+              <option value="monza">MONZA (ITALY)</option>
+              <option value="spa">SPA (BELGIUM)</option>
+              <option value="suzuka">SUZUKA (JAPAN)</option>
+              <option value="silverstone">SILVERSTONE (UK)</option>
+              <option value="singapore">MARINA BAY (NIGHT)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="hud-telemetry-grid">
+          <div class="hud-tele-metric">
+            <span class="hud-tele-label">RECORD LAP</span>
+            <div class="hud-tele-val" id="f1-lap-time">1:18.887</div>
+          </div>
+          <div class="hud-tele-metric">
+            <span class="hud-tele-label">MAX SPEED</span>
+            <div class="hud-tele-val" id="f1-top-speed">354 KM/H</div>
+          </div>
+          <div class="hud-tele-metric">
+            <span class="hud-tele-label">TRACK LENGTH</span>
+            <div class="hud-tele-val" id="f1-track-length">5.793 KM</div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <img src="assets/images/f1-telemetry-monza.svg" alt="Monza Track Telemetry" style="width: 100%; height: 210px; object-fit: cover; border: 1px solid var(--border-dim); border-radius: var(--radius-sm);">
+        </div>
+
+        <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
+          "Motorsport is where physics, engineering obsession, and human bravery converge. Braking from 340 km/h down to 70 km/h in two seconds at Prima Variante pulling 5G under braking—it is pure violent art."
+        </p>
+      </div>
+    </div>
+
+    <!-- Editorial Personal Notes on F1 -->
+    <div class="f1-curated-dossier">
+      <div class="f1-info-card tactical-box">
+        <h4>DRIVING &amp; RACE CRAFT</h4>
+        <p>Studying throttle modulation, late-braking maneuvers into chicanes, and the delicate art of tire thermal management over high-degradation 50-lap stints.</p>
+      </div>
+      <div class="f1-info-card tactical-box">
+        <h4>AERODYNAMICS &amp; GROUND EFFECT</h4>
+        <p>The dark sorcery of Venturi tunnels, ride-height stiffness, downforce vs. straight-line drag compromises, and DRS vortex management at high velocities.</p>
+      </div>
+      <div class="f1-info-card tactical-box">
+        <h4>NIGHT RACING DRAMA</h4>
+        <p>Nothing rivals the visual violence of night races—glowing red brake discs at 1,000°C, floodlit curbs, sparks scattering across the asphalt, and relentless humidity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. AUTOMOTIVE CULTURE — The Garage // Built Not Bought
+       ======================================================================== -->
+  <section class="section" id="the-garage">
+    <div class="section-header">
+      <div class="classified-tag">MIDNIGHT BUILDS // SECTION 08</div>
+      <h2 class="section-title">THE GARAGE // <span class="accent">BUILT NOT BOUGHT</span></h2>
+      <p class="section-desc">Underground garage at midnight: concrete walls, tire smoke, V12 intake roar, and the uncompromising art of mechanical customization.</p>
+    </div>
+
+    <!-- Featured Masterpiece: Lamborghini Diablo -->
+    <div class="garage-hero-card tactical-box">
+      <div class="garage-hero-split">
+        <div class="garage-hero-media">
+          <img src="assets/images/garage-diablo.jpg" alt="Lamborghini Diablo V12 at Vintage Gas Station" class="garage-hero-img">
+        </div>
+        <div class="garage-hero-info">
+          <span class="classified-tag" style="margin-bottom: 0.5rem;">DREAM BUILD // ICONIC SUPERCARS</span>
+          <h3>LAMBORGHINI DIABLO</h3>
+          <span class="car-engine-spec">5.7L NATURALLY ASPIRATED V12 // 492 HP // 4.1s 0-60</span>
+          <p>
+            Combining jaw-dropping aesthetics with raw, unbridled power, the Diablo is the epitome of Italian engineering and retro supercar excess. Its V12 engine roars to life with mechanical fury, propelling you into an era where cars demanded absolute physical respect. Scissor doors, pop-up headlamps, deep dish alloys, and zero driver assists.
+          </p>
+          <div class="dossier-meta-footer">
+            <span>DRIVETRAIN: REAR-MID ENGINE • MANUAL GATED SHIFTER</span>
+            <span style="color: var(--crimson-bright);">TOP SPEED: 202 MPH</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Configurator: "Build Your Dream Car" -->
+    <div class="car-configurator-box tactical-box">
+      <div style="border-bottom: 1px solid var(--border-dim); padding-bottom: 1rem; margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <span class="classified-tag">INTERACTIVE CONCEPT</span>
+          <h3 style="font-family: var(--font-heading); font-size: 1.6rem; color: #fff; letter-spacing: 1.5px;">BUILD YOUR DREAM MACHINE</h3>
+        </div>
+        <button class="btn btn-primary" id="btn-rev-engine" style="padding: 0.45rem 1.1rem; font-size: 0.8rem;">
+          <span>🔊 REV ENGINE</span>
+        </button>
+      </div>
+
+      <div class="configurator-grid">
+        <!-- Live SVG Render Pane -->
+        <div class="car-canvas-preview">
+          <svg id="car-render-svg" viewBox="0 0 600 280" width="100%" height="220" style="overflow: visible;">
+            <!-- Ground shadow -->
+            <ellipse cx="300" cy="245" rx="260" ry="14" fill="#000" opacity="0.8"/>
+            
+            <!-- Rear Aero Wing (Dynamically Toggled) -->
+            <path id="car-aero-path" d="M70 120 H200 L180 140 H90 Z" fill="#181820" stroke="#ff2a4b" stroke-width="1.5"/>
+
+            <!-- Main Car Body Shell -->
+            <path id="car-body-path" d="M80 220 C90 190 140 160 210 150 L340 145 C410 145 470 170 510 200 L540 220 C545 225 540 235 520 238 L75 238 C65 235 70 225 80 220 Z" 
+                  fill="#e50914" stroke="#ffffff" stroke-width="0.8" style="transition: fill 0.3s; filter: drop-shadow(0 0 15px rgba(229, 9, 20, 0.4));"/>
+            
+            <!-- Cabin Glass Canopy -->
+            <path d="M210 150 L270 115 L380 115 L430 150 Z" fill="#0a0c10" stroke="#334155" stroke-width="1.5"/>
+            <path d="M280 120 L370 120 L410 148 L230 148 Z" fill="#111827" opacity="0.8"/>
+
+            <!-- Wheels (Front & Rear) -->
+            <circle cx="160" cy="235" r="32" fill="#090a0f" stroke="#475569" stroke-width="4"/>
+            <circle cx="160" cy="235" r="18" fill="#181a24" stroke="#ff2a4b" stroke-width="2"/>
+            <circle cx="440" cy="235" r="32" fill="#090a0f" stroke="#475569" stroke-width="4"/>
+            <circle cx="440" cy="235" r="18" fill="#181a24" stroke="#ff2a4b" stroke-width="2"/>
+          </svg>
+
+          <!-- Live Estimated Telemetry Output -->
+          <div style="display: flex; gap: 2rem; margin-top: 1.5rem; font-family: var(--font-mono); font-size: 0.8rem; color: #888;">
+            <div>EST. POWER: <span id="cfg-bhp" style="color: var(--crimson-bright); font-weight: bold;">492 HP</span></div>
+            <div>0-60 MPH: <span id="cfg-060" style="color: #fff; font-weight: bold;">4.1s</span></div>
+            <div>CURB WEIGHT: <span id="cfg-weight" style="color: var(--cyan-electric); font-weight: bold;">1,575 KG</span></div>
+          </div>
+        </div>
+
+        <!-- Controls Column -->
+        <div class="config-options-column">
+          <div class="config-group">
+            <label class="config-group-label" for="cfg-chassis">SELECT CHASSIS PLATFORM</label>
+            <select id="cfg-chassis" class="form-select">
+              <option value="diablo">LAMBORGHINI DIABLO (SUPERCAR V12)</option>
+              <option value="skyline">NISSAN SKYLINE R34 GT-R (JDM TWIN TURBO)</option>
+              <option value="porsche">PORSCHE 911 964 TURBO (AIR-COOLED RESTOMOD)</option>
+              <option value="m3gtr">BMW M3 GTR E46 (TRACK V8)</option>
+            </select>
+          </div>
+
+          <div class="config-group">
+            <span class="config-group-label">CUSTOM PAINT SHADE</span>
+            <div class="color-picker-row">
+              <div class="color-swatch active" data-color="#e50914" style="background: #e50914;" title="Blood Crimson"></div>
+              <div class="color-swatch" data-color="#0a0a0d" style="background: #0a0a0d;" title="Obsidian Charcoal"></div>
+              <div class="color-swatch" data-color="#4c1d95" style="background: #4c1d95;" title="Midnight Purple III"></div>
+              <div class="color-swatch" data-color="#475569" style="background: #475569;" title="Slate Graphite"></div>
+              <div class="color-swatch" data-color="#00f0ff" style="background: #00f0ff;" title="Cyber Cyan"></div>
+            </div>
+          </div>
+
+          <div class="config-group">
+            <label class="config-group-label" for="cfg-aero">AERODYNAMIC SETUP</label>
+            <select id="cfg-aero" class="form-select">
+              <option value="high-wing">GT HIGH CARBON WING</option>
+              <option value="ducktail">SLEEK DUCKTAIL SPOILER</option>
+              <option value="clean">CLEAN / AERO DELETE</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Garage Builds Grid -->
+    <div class="garage-cards-grid">
+      <!-- Build 1: Skyline R34 -->
+      <div class="car-build-card tactical-box">
+        <div class="car-build-media">
+          <img src="assets/images/car-skyline-r34.svg" alt="Nissan Skyline GT-R R34" class="car-build-img">
+        </div>
+        <div class="car-build-body">
+          <h4 style="font-family: var(--font-heading); font-size: 1.4rem; color: #fff; margin-bottom: 0.3rem;">NISSAN SKYLINE GT-R (R34)</h4>
+          <span style="font-family: var(--font-mono); font-size: 0.75rem; color: #c084fc; display: block; margin-bottom: 0.8rem;">CATEGORY: JDM LEGENDS // RB26DETT</span>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+            Twin-turbocharged inline-6, ATTESA E-TS Pro all-wheel drive, Midnight Purple III paintwork, Volk TE37 forged wheels, and titanium exhaust. The ultimate expression of 90s Japanese technological supremacy.
+          </p>
+          <div class="dossier-meta-footer">
+            <span>POWER: 620 BHP (EST.)</span>
+            <span style="color: var(--crimson-bright);">TOKYO MIDNIGHT</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Build 2: Porsche 964 Turbo -->
+      <div class="car-build-card tactical-box">
+        <div class="car-build-media">
+          <img src="assets/images/car-porsche-964.svg" alt="Porsche 911 964 Turbo" class="car-build-img">
+        </div>
+        <div class="car-build-body">
+          <h4 style="font-family: var(--font-heading); font-size: 1.4rem; color: #fff; margin-bottom: 0.3rem;">PORSCHE 911 (964) TURBO</h4>
+          <span style="font-family: var(--font-mono); font-size: 0.75rem; color: #ef4444; display: block; margin-bottom: 0.8rem;">CATEGORY: RESTOMODS &amp; CLASSICS</span>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+            Air-cooled 3.6L boxer turbo, widebody rear flares, whale-tail spoiler, and modern coilover suspension. Slate graphite paint with blood red leather bucket seats. Unforgiving mechanical purity.
+          </p>
+          <div class="dossier-meta-footer">
+            <span>POWER: 450 BHP</span>
+            <span style="color: var(--crimson-bright);">AIR-COOLED</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Build 3: BMW M3 GTR -->
+      <div class="car-build-card tactical-box">
+        <div class="car-build-media">
+          <img src="assets/images/car-m3-gtr.svg" alt="BMW M3 GTR E46" class="car-build-img">
+        </div>
+        <div class="car-build-body">
+          <h4 style="font-family: var(--font-heading); font-size: 1.4rem; color: #fff; margin-bottom: 0.3rem;">BMW M3 GTR (E46)</h4>
+          <span style="font-family: var(--font-mono); font-size: 0.75rem; color: #38bdf8; display: block; margin-bottom: 0.8rem;">CATEGORY: TRACK WEAPONS // P60B40 V8</span>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+            Straight-cut gear whine, side-exit race exhausts, carbon fiber widebody, and the heart of the legendary 2005 Rockport street racing folklore. Raw race pedigree brought to the street.
+          </p>
+          <div class="dossier-meta-footer">
+            <span>POWER: 444 BHP</span>
+            <span style="color: var(--crimson-bright);">ALMS CHAMPION</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       10. CONTACT SECTION — Let's Create Something
+       ======================================================================== -->
+  <section class="section" id="contact">
+    <div class="section-header">
+      <div class="classified-tag">DIRECT TRANSMISSION // SECTION 09</div>
+      <h2 class="section-title">HAVE AN IDEA? <span class="accent">LET'S BRING IT TO LIFE.</span></h2>
+      <p class="section-desc">Open for music collaborations, custom art commissions, game dev brainstorming, or automotive build discussions.</p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Contact Info & Socials -->
+      <div class="contact-info-panel">
+        <h3>COMMUNICATION CHANNELS</h3>
+        <p>
+          Whether you want to lay down heavy guitar riffs, build a gritty survival horror prototype, commission dark gothic illustrations, or talk car tuning over black coffee—reach out directly.
+        </p>
+
+        <div class="contact-methods">
+          <a href="mailto:nakshatra.meshram@example.com" class="contact-method-link">
+            <span>✉️</span>
+            <span>nakshatra.meshram@example.com</span>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="contact-method-link">
+            <span>📷</span>
+            <span>instagram.com/nakshatra_creates</span>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" class="contact-method-link">
+            <span>▶️</span>
+            <span>youtube.com/@nakshatramusic</span>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="contact-method-link">
+            <span>⚡</span>
+            <span>github.com/nakshatrameshram</span>
+          </a>
+        </div>
+
+        <!-- Terminal Status Display -->
+        <div id="contact-status-msg" style="display: none; padding: 1rem; border: 1px solid var(--crimson-bright); font-family: var(--font-mono); font-size: 0.8rem; background: rgba(0,0,0,0.8); border-radius: var(--radius-sm);">
+        </div>
+      </div>
+
+      <!-- Tactical Terminal Form -->
+      <div class="contact-form-panel tactical-box">
+        <form id="contact-terminal-form" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="contact-name">IDENTIFIER // YOUR NAME</label>
+            <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Mercer" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-email">RETURN FREQUENCY // EMAIL ADDRESS</label>
+            <input type="email" id="contact-email" class="form-input" placeholder="e.g. alex@sector7.org" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-category">PROJECT CATEGORY</label>
+            <select id="contact-category" class="form-select">
+              <option value="music">MUSIC // GUITAR COLLAB &amp; VOCALS</option>
+              <option value="art">ART // DARK ART &amp; SKETCH COMMISSION</option>
+              <option value="gamedev">GAME DEV // PROTOTYPE &amp; MECHANICS</option>
+              <option value="garage">THE GARAGE // CAR BUILDS &amp; MOTORSPORT</option>
+              <option value="other">GENERAL INQUIRY / HELLO</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-message">TRANSMISSION CONTENT // MESSAGE</label>
+            <textarea id="contact-message" class="form-textarea" placeholder="Detail your concept, project timeline, or creative thoughts..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <span>TRANSMIT ENCRYPTED PACKET</span>
+            <span aria-hidden="true">⚡</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div>
+        <h3 style="font-family: var(--font-display); font-size: 1.4rem; color: #fff; letter-spacing: 2px;">
+          NAKSHATRA ATISH MESHRAM
+        </h3>
+        <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--crimson-bright); margin-top: 4px;">
+          "BETWEEN SIX STRINGS, FOUR WHEELS, AND INFINITE WORLDS."
+        </p>
+      </div>
+
+      <div style="display: flex; gap: 1rem;">
+        <button class="audio-hud-btn" id="btn-toggle-scanlines">CRT: ON</button>
+        <a href="#hero" class="btn btn-outline" style="padding: 0.4rem 1rem; font-size: 0.75rem;">TOP ▲</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>DESIGNED &amp; ENGINEERED AS A DARK CINEMATIC DIGITAL IDENTITY.</span>
+      <span>SYS.STATUS: OPERATIONAL // ALL RIGHTS RESERVED.</span>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODALS: Artwork Lightbox & Classified Game Dossier
+       ======================================================================== -->
+  <!-- Art Lightbox Modal -->
+  <div class="modal-backdrop" id="art-lightbox-modal" role="dialog" aria-modal="true" aria-label="Artwork Lightbox">
+    <div class="modal-window">
+      <button class="modal-close-btn" aria-label="Close Lightbox">✕</button>
+      <div class="lightbox-content">
+        <div class="lightbox-img-pane">
+          <img src="" alt="Artwork High Resolution" class="lightbox-img">
+        </div>
+        <div class="lightbox-info-pane">
+          <span class="lightbox-category">DARK ART</span>
+          <h3 class="lightbox-title">UNTITLED</h3>
+          <p class="lightbox-desc">Detailed artwork analysis and backstory will be loaded here.</p>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #777; border-top: 1px solid var(--border-dim); padding-top: 1rem;">
+            PRESS [ESC] OR CLICK OUTSIDE TO CLOSE
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Game Dossier Modal -->
+  <div class="modal-backdrop" id="game-dossier-modal" role="dialog" aria-modal="true" aria-label="Classified Game Dossier">
+    <div class="modal-window" style="max-width: 650px; padding: 2.5rem;">
+      <button class="modal-close-btn" aria-label="Close Dossier">✕</button>
+      <span class="classified-tag" style="margin-bottom: 0.5rem;">OPERATOR INTEL</span>
+      <h3 class="dossier-modal-title" style="font-family: var(--font-heading); font-size: 1.8rem; color: #fff; margin-bottom: 0.35rem;">
+        CLASSIFIED ARCHIVE
+      </h3>
+      <span class="dossier-modal-genre" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--crimson-bright); display: block; margin-bottom: 1.25rem;">
+        GENRE // STATUS
+      </span>
+      <p class="dossier-modal-body" style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
+        Dossier intel content.
+      </p>
+      <div style="display: flex; justify-content: flex-end;">
+        <button class="btn btn-outline modal-close-btn-bottom" style="padding: 0.4rem 1rem; font-size: 0.8rem;" onclick="document.getElementById('game-dossier-modal').classList.remove('active'); document.body.style.overflow='';">
+          CLOSE DOSSIER
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

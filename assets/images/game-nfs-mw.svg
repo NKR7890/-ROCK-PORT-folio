@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nfsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f1807"/>
+      <stop offset="40%" stop-color="#120f09"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="bmwSilver" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8a9ba8"/>
+      <stop offset="50%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#nfsGrad)"/>
+  
+  <!-- Speed lines & Rockport yellow heat filter -->
+  <path d="M0 260 L600 240 M0 280 L600 270 M0 300 L600 295 M0 320 L600 315" stroke="#d97706" stroke-width="1" stroke-opacity="0.4"/>
+  <rect x="0" y="0" width="600" height="380" fill="#f59e0b" opacity="0.04"/>
+  
+  <!-- Tachometer Speed Dial -->
+  <circle cx="500" cy="100" r="70" fill="none" stroke="#333" stroke-width="6"/>
+  <circle cx="500" cy="100" r="70" fill="none" stroke="#f59e0b" stroke-width="6" stroke-dasharray="320" stroke-dashoffset="90"/>
+  <line x1="500" y1="100" x2="540" y2="70" stroke="#e50914" stroke-width="3"/>
+  <text x="475" y="105" font-family="monospace" font-size="14" font-weight="bold" fill="#f59e0b">8.5K</text>
+  <text x="480" y="120" font-family="monospace" font-size="9" fill="#999">RPM x1000</text>
+  
+  <!-- BMW M3 GTR Low Silhouette -->
+  <path d="M120 260 C140 230 180 200 240 195 L340 195 C390 195 440 220 480 250 L520 260 C530 265 540 275 520 280 L100 280 C90 275 105 265 120 260 Z" fill="#0d1117" stroke="#475569" stroke-width="1.5"/>
+  <!-- Iconic Blue Racing Stripe -->
+  <path d="M220 196 L310 196 L360 250 L320 250 Z" fill="#2563eb" opacity="0.85"/>
+  <path d="M330 196 L345 196 L395 250 L380 250 Z" fill="#2563eb" opacity="0.85"/>
+  <!-- Rear Wing -->
+  <path d="M110 220 H150 L140 245 H120 Z" fill="#1e293b" stroke="#64748b" stroke-width="1"/>
+  <!-- Wheels -->
+  <circle cx="170" cy="280" r="28" fill="#111" stroke="#475569" stroke-width="3"/>
+  <circle cx="450" cy="280" r="28" fill="#111" stroke="#475569" stroke-width="3"/>
+  <circle cx="170" cy="280" r="16" fill="#333" stroke="#f59e0b" stroke-width="1.5"/>
+  <circle cx="450" cy="280" r="16" fill="#333" stroke="#f59e0b" stroke-width="1.5"/>
+  
+  <!-- Heat Condition & Wanted Notice -->
+  <rect x="40" y="40" width="180" height="32" fill="#000000" stroke="#e50914" stroke-width="1.5"/>
+  <text x="50" y="62" font-family="Impact, sans-serif" font-size="18" fill="#e50914" letter-spacing="2">HEAT LEVEL 5</text>
+  <rect x="40" y="80" width="120" height="20" fill="#e50914"/>
+  <text x="45" y="94" font-family="monospace" font-size="11" font-weight="bold" fill="#000">WANTED: #1 RAZOR</text>
+  
+  <text x="40" y="340" font-family="Impact, sans-serif" font-size="32" fill="#ffffff" letter-spacing="1">NEED FOR SPEED</text>
+  <text x="275" y="340" font-family="Impact, sans-serif" font-size="32" fill="#f59e0b" letter-spacing="1">MOST WANTED (2005)</text>
+  <text x="40" y="360" font-family="monospace" font-size="11" fill="#888">ROCKPORT CITY // PURSUIT RADAR: ACTIVE // TOP SPEED: 242 MPH</text>
+</svg>
